@@ -4,25 +4,25 @@
 To perform integer matrix summation with a 2D-grid and 2D-blocks and find the best execution configuration.
 
 ## PROCEDURE:
-### STEP 1 :
+### STEP 1:
 Include the required files and library.
 
-### STEP 2 :
-Declare a function sumMatrixOnHost , to perform matrix summation on the host side . Declare three matrix A , B , C . Store the resultant matrix in C.
+### STEP 2:
+Declare a function sumMatrixOnHost, to perform matrix summation on the host side. Declare three matrix A, B, C. Store the resultant matrix in C.
 
-### STEP 3 :
-Declare a function with __ global __ , which is a CUDA C keyword , to execute the function to perform matrix summation on GPU .
+### STEP 3:
+Declare a function with __ global __ , which is a CUDA C keyword , to execute the function to perform matrix summation on GPU.
 
-### STEP 4 :
-Declare Main method/function . In the Main function Set up device and data size of matrix ,Allocate Host Memory and device global memory,Initialize data at host side and then add matrix at host side ,transfer data from host to device.
+### STEP 4:
+Declare Main method/function. In the Main function Set up device and data size of matrix, Allocate Host Memory and device global memory, Initialize data at host side and then add matrix at host side, transfer data from host to device.
 
-### STEP 5 :
-Invoke kernel at host side , check for kernel error and copy kernel result back to host side.
+### STEP 5:
+Invoke kernel at host side, check for kernel error and copy kernel result back to host side.
 
-### STEP 6 :
-Finally Free device global memory,host memory and reset device.
+### STEP 6:
+Finally Free device global memory, host memory and reset device.
 
-### STEP 7 :
+### STEP 7:
 Save and Run the Program.
 
 ## PROGRAM:
